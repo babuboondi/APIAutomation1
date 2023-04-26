@@ -14,7 +14,7 @@ public class LoginPage {
 	
 	By enterUsername = By.id("user-name");
 	By enterPassword = By.name("password");
-	By clickBtn      = By.id("login-button");
+	By clickBtn      = By.xpath("//input[@type='submit']");
 
 	
 	public void enterUn() {
