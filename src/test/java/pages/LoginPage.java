@@ -30,7 +30,7 @@ public class LoginPage {
 	public void clickBtn() throws Exception {
 		
 		driver.findElement(clickBtn).click();
-		Thread.sleep(6000);
+		Thread.sleep(4000);
 	}
 	
 	public void validateHomePage() throws InterruptedException {
@@ -38,5 +38,6 @@ public class LoginPage {
 		Thread.sleep(6000);
 		String expected = "https://www.saucedemo.com/inventory.html";
 		Assert.assertEquals(expected, strUrl);
+		Thread.sleep(2000);
 	}
 }
