@@ -39,6 +39,6 @@ public class LoginPage {
 		Thread.sleep(2000);
 		String expected = "https://www.saucedemo.com/inventory.html";
 		Assert.assertEquals(expected, strUrl);
-		Thread.sleep(400);
+		Thread.sleep(200);
 	}
 }
