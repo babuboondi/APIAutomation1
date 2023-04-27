@@ -30,11 +30,12 @@ public class LoginPage {
 	public void clickBtn() throws Exception {
 		
 		driver.findElement(clickBtn).click();
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 	}
 	
-	public void validateHomePage() {
+	public void validateHomePage() throws InterruptedException {
 		String strUrl = driver.getCurrentUrl();
+		Thread.sleep(6000);
 		String expected = "https://www.saucedemo.com/inventory.html";
 		Assert.assertEquals(expected, strUrl);
 	}
