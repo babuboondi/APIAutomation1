@@ -6,6 +6,9 @@ pipeline {
             steps {
                 bat "mvn -D clean test"
             }
+            triggers {
+            pollSCM '*/10 * * * *'
+            }
  
             post {                
                 success {
